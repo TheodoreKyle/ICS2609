@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, sans-serif;
+    background: #f4f6f8;
+    font-size: 1.2rem;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+.section {
+    margin-bottom: 25px;
+}
+.pass {
+    color: green;
+    font-weight: bold;
+}
+.fail {
+    color: red;
+    font-weight: bold;
+}
+ul {
+    padding-left: 20px;
+}
