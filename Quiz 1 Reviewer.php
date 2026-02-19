@@ -14,6 +14,15 @@
         echo "Total number of letters: " . strlen("Hello world!") . "<br>";
         echo "Total number of words: " . str_word_count("Hello world!") . "<br>"; 
         echo "Position of world: " . strpos("Hello world!", "world") . "<br>";
+
+        $x = "Hello World!";    
+        echo "String replacement of Hello World! with Dolly: " . str_replace("World", "Dolly", $x) . "<br>";
+
+        $xx = "Hello lovely World!";
+        $yy = explode(" ", $xx);
+
+        //Use print_r() to display the result
+        print_r($yy);
     ?>
 
     <h2>Match Expressions</h2>
@@ -45,6 +54,11 @@
     ?>
 
     <h2>Date and Time</h2>
+
+    <?php
+        echo "The time is " . date("H:i:s") . "<br>";
+        echo "The time is " . date("h:i:s a");
+    ?>
     
 </body>
 </html>
