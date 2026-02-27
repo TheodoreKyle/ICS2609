@@ -1,0 +1,34 @@
+[
+    {
+        "id": "prod_69a1125b337c4",
+        "name": "Xiaomi",
+        "price": 22000,
+        "category": "Phones",
+        "stock": 100,
+        "createdAt": "2026-02-27 04:41:15"
+    },
+    {
+        "id": "prod_69a11291ef36e",
+        "name": "Apple",
+        "price": 150000,
+        "category": "Laptops",
+        "stock": 5,
+        "createdAt": "2026-02-27 04:42:09"
+    },
+    {
+        "id": "prod_69a1172011485",
+        "name": "Cisco",
+        "price": 400000,
+        "category": "Routers",
+        "stock": 2,
+        "createdAt": "2026-02-27 05:01:36"
+    },
+    {
+        "id": "prod_69a11741e9ef8",
+        "name": "Apple",
+        "price": 30,
+        "category": "Fruits",
+        "stock": 50000,
+        "createdAt": "2026-02-27 05:02:09"
+    }
+]
