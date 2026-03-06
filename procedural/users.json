@@ -1,0 +1,32 @@
+[
+    {
+        "fullname": "Theodore Kyle Choa",
+        "email": "choa.theodore.endurance@gmail.com",
+        "username": "TheodoreKyle",
+        "password": "12345678"
+    },
+    {
+        "fullname": "Joaquin Elcana",
+        "email": "joaquin.elcana.cics@ust.edu.ph",
+        "username": "Joaqs",
+        "password": "567"
+    },
+    {
+        "fullname": "Ron Christian Evaristo",
+        "email": "ronchristian.evaristo.cics@ust.edu.ph",
+        "username": "Ron",
+        "password": "asd"
+    },
+    {
+        "fullname": "Kristian Reyes",
+        "email": "kristian.reyes.cics@ust.edu.ph",
+        "username": "deuce",
+        "password": "zxc"
+    },
+    {
+        "fullname": "Evan Dacles",
+        "email": "evandacles@gmail.com",
+        "username": "Hatsune",
+        "password": "qwerty"
+    }
+]
