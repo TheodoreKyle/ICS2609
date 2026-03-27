@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 12px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group > label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccd6e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #f8fbfd;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  background-color: #f8fbfd;
+  border: 1px solid #ccd6e0;
+  border-radius: 8px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.93rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+}
+
+.radio-label:hover {
+  background-color: #e8f4fd;
+}
+
+input[type="radio"] {
+  accent-color: #3498db;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.btn-reset,
+.btn-submit {
+  padding: 10px 26px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-reset {
+  background-color: #ecf0f1;
+  color: #555;
+}
+
+.btn-reset:hover {
+  background-color: #dce1e7;
+}
+
+.btn-submit {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.btn-submit:hover {
+  background-color: #2980b9;
+}
+
+.btn-submit:active,
+.btn-reset:active {
+  transform: scale(0.97);
+}
+
+.table-wrapper {
+  background-color: #ffffff;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  min-width: 700px;
+  border: 1px solid #b8d4e8;
+}
+
+thead tr {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e2eaf0;
+  transition: background-color 0.15s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f9fd;
+}
+
+tbody tr:hover {
+  background-color: #dceefb;
+}
+
+thead th,
+tbody td {
+  border: 1px solid #b8d4e8;
+}
+
+tbody td {
+  padding: 11px 16px;
+  color: #444;
+  vertical-align: middle;
+}
+
+tbody td:first-child {
+  font-weight: 600;
+  color: #3498db;
+  text-align: center;
+  width: 40px;
+  border: 1px solid #b8d4e8 !important;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 14px;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+a[href*="update"] {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+
+a[href*="update"]:hover {
+  background-color: #d68910;
+}
+
+a[href*="delete"] {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+a[href*="delete"]:hover {
+  background-color: #c0392b;
+}
+
+a:active {
+  transform: scale(0.96);
+}
+
+@media (max-width: 480px) {
+  .form-wrapper,
+  .table-wrapper {
+    padding: 24px 18px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn-reset,
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
