@@ -91,14 +91,15 @@ class Post {
 
     // UPDATE POST
 
-    function updatePost(){
+    function updatePost($image){
 
         $this->db->query("
             UPDATE posts
             SET
                 title = :title,
                 body = :body,
-                author = :author
+                author = :author,
+                image = :image
             WHERE id = :id
         ");
 
@@ -106,6 +107,7 @@ class Post {
         $this->db->bind(":title", $this->title);
         $this->db->bind(":body", $this->body);
         $this->db->bind(":author", $this->author);
+        $this->db->bind(":image", $image);
 
         return $this->db->execute();
     }

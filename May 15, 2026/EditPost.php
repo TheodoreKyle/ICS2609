@@ -31,7 +31,7 @@ $data = $post->getPost($id);
 
         <div class="card-body">
 
-            <form method="POST" action="UpdatePost.php">
+            <form method="POST" action="UpdatePost.php" enctype="multipart/form-data">
 
                 <input
                     type="hidden"
@@ -83,7 +83,7 @@ $data = $post->getPost($id);
                     <label>Image</label>
 
                     <input
-                        type="text"
+                        type="file"
                         name="image"
                         class="form-control"
                         value="<?php echo htmlspecialchars($data->image); ?>"
