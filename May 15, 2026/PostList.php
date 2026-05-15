@@ -42,6 +42,7 @@ $posts = $post->getPosts();
                 <th>Title</th>
                 <th>Body</th>
                 <th>Author</th>
+                <th>Image</th>
                 <th>Action</th>
             </tr>
 
@@ -60,6 +61,8 @@ $posts = $post->getPosts();
                 <td><?php echo htmlspecialchars($row->body); ?></td>
 
                 <td><?php echo htmlspecialchars($row->author); ?></td>
+
+                <td><img src="<?php echo htmlspecialchars($row->image); ?>" style="width: 350px; height: auto;"></td>
 
                 <td>
 

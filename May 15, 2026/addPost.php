@@ -19,7 +19,7 @@
 
         <div class="card-body">
 
-            <form action="SavePost.php" method="POST">
+            <form action="SavePost.php" method="POST" enctype="multipart/form-data">
 
                 <div class="mb-3">
                     <label>Title</label>
@@ -48,6 +48,16 @@
                     <input
                         type="text"
                         name="author"
+                        class="form-control"
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label>Image</label>
+
+                    <input
+                        type="file"
+                        name="image"
                         class="form-control"
                     >
                 </div>

@@ -1,6 +1,6 @@
-CREATE DATABASE crud_db;
+CREATE DATABASE choadb;
 
-USE crud_db;
+USE choadb;
 
 CREATE TABLE posts (
 

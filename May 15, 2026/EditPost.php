@@ -78,6 +78,19 @@ $data = $post->getPost($id);
 
                 </div>
 
+                <div class="mb-3">
+
+                    <label>Image</label>
+
+                    <input
+                        type="text"
+                        name="image"
+                        class="form-control"
+                        value="<?php echo htmlspecialchars($data->image); ?>"
+                    >
+
+                </div>
+
                 <button type="submit" name="edit" class="btn btn-primary">
                     Update Post
                 </button>

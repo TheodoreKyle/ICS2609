@@ -74,16 +74,17 @@ class Post {
 
     // ADD POST
 
-    function addPost(){
+    function addPost($image){
 
         $this->db->query("
-            INSERT INTO posts(title, body, author)
-            VALUES(:title, :body, :author)
+            INSERT INTO posts(title, body, author, image)
+            VALUES(:title, :body, :author, :image)
         ");
 
         $this->db->bind(":title", $this->title);
         $this->db->bind(":body", $this->body);
         $this->db->bind(":author", $this->author);
+        $this->db->bind(":image", $image);
 
         return $this->db->execute();
     }
